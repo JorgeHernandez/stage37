@@ -1,0 +1,77 @@
+all:
+  jmsPaymentPlugin:
+    # You can overwrite these values in your global app.yml
+    paypal:
+      username:  'quafzi_1282422503_biz_api1.netextreme.de',
+      password:  '1282422508',
+      signature: 'A6xwvNuPnHQVIia8cnUqI2EXX9JWA7AbKPJCGjz0MmzFT7rKMF-ZKyoj' 
+  a:
+    # If true, there will be a language switcher next to the login/logout button
+    i18n_switch: true
+    i18n_languages: [en, fr, de, es, ru]
+    # By default new slots in an area go to the top, you can change that here
+    # new_slots_top: false
+    routes_register: false 
+    default_on: true
+    pretty_english_dates: true
+   
+    # Sets the level of CMS Pages allowed to be created by the client 
+    # (e.g. page_level: 1 means the site can only have pages that are 
+    # peers to the homepage peers A.K.A. top navigation pages)
+    # max_page_levels: 3  
+
+    # Maximum number of child pages allowed to be created at any given level
+    # max_children_per_page: 8 
+    
+    # Message displayed next to button if client tries to click
+    # max_page_limit_message: Cannot create a child page here.
+    
+    addslot_button_style: big
+    history_button_style: no-label big
+    delete_button_style: no-label    
+    
+    # Enable slots added by the media plugins
+    slot_types:
+      aImage: Image
+      aSlideshow: Slideshow
+      aVideo: Video
+      aBlog: Blog Posts
+      aBlogSingle: Blog Post
+      aEvent: Events
+      aEventSingle: Event
+    # Change to true if you'd like the home page to also appear as a tab
+    home_as_tab: false
+    # Uncomment and change if your media plugin runs on a separate site
+    # media_site: "http://www.mymediasite.com/"
+    # You should change this both here and below
+    media_apikey: 'dummy'
+    # Templates for pages, with their friendly names
+    templates:
+      home: Home Page
+      default: Default Page
+      twoColumn: Two Column Page
+    # Use the provided stylesheet (recommended)
+    use_bundled_stylesheet: true
+    engines:
+      '': 'Template-Based'
+      aBlog: Blog
+      aEvent: Events
+      aMedia: Media
+  # Media plugin related options
+  aMedia:
+    apikeys:
+      # Must match the API key above
+      - 'dummy'
+    # Recommended
+    apipublic: false
+    admin_credential: media_admin
+    upload_credential: media_upload
+  # Model classes to be indexed by search engine
+  aToolkit:
+    indexes:
+      - 'aPage'
+  aimageconverter:
+    # if netpbm is not in PHP's PATH when system() is invoked, specify its location here
+    # (at the command line, type 'where giftopnm' to find out what folder netpbm is in;
+    # if you do not have it you must install the netpbm utilities on your system)
+    # path: /opt/local/bin # typical netpbm location for macports

@@ -1,0 +1,98 @@
+re html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, font, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border:         0 none;
+	font-family:    inherit;
+	font-size:      100%;
+	font-style:     inherit;
+	font-weight:    inherit;
+	list-style:     none;
+	margin:         0;
+	padding:        0;
+	vertical-align: baseline;
+}
+
+body
+{
+	font-family: Trebuchet MS,Helvetica,Tahoma,Arial,Verdana,sans-serif;
+	font-size: 13px;
+	color: #4a3420;
+}
+
+#a-wrapper
+{
+    width: 950px;
+    margin: 0px auto;
+    border-width:     1px;
+    border-top-width: 0px;
+    border-style:     solid;
+    border-color:     #4a3420;
+}
+
+a, a:visited
+{
+	text-decoration: underline;
+	color: #4a3420;
+}
+
+a:focus, a:hover
+{
+	text-decoration: underline;
+	color: #aa3420;
+}
+
+#logo
+{
+	font-size: 34px;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+#logo a, #logo a:visited, #logo a:focus, #logo a:hover
+{
+	text-decoration: none;
+}
+
+.header
+{
+	height: 60px;
+	background: #faf4e0;
+	padding: 0 10px;
+}
+
+.footer
+{
+	height:     20px;
+	background: #4a3420;
+    color:      #faf4e0;
+	padding:    5px 10px 0;
+}
+
+.last
+{
+    float:none!important;
+}
+
+#slogan
+{
+	position:absolute;
+	top:35px;
+}
+
+.header dl.cart_info {
+    margin-left:800px;
+    position:relative;
+    top:-30px;
+    width:125px;
+}
+
+.header .user_info {
+    margin-left:400px;
+    position:relative;
+    top:-36px;
+    width:300px;
+}
+
+#sfWebDebugBar
+{
+	bottom: 0 !important;
+	top: auto !important;
+}
